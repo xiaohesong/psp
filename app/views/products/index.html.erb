@@ -1,0 +1,39 @@
+<div id="app-container" class="container" myApp="STORE_WECHAT_NEW">
+  <article class="product container row">
+
+              <div class="product__images  is-large col-6">
+                  <div class="product-image">
+                    <%= image_tag 'product-foto-1.jpg' %>
+                      <div class="product-image__sticker c-sticker"><sup>$</sup>29</div>
+                      <div class="product-image__qr"></div>
+                  </div>
+              </div>
+              <div class="product__description col-6">
+
+                  <h1 class="product__title">
+                      Men's OnlinePay Wallet
+                  </h1>
+
+                  <!-- <p class="product__text">
+
+                  </p> -->
+
+                  <span>
+                    A smile wallet can last a lifetime-if you take care of it. For that reason, it’s important for
+                    parents to instill good oral health habits...
+                  </span>
+
+                  <form method="POST" action="/demo/pay" target="_blank">
+                      <input type="hidden" name="csrfmiddlewaretoken" value="4NVd7AkOAleZZvaLzQhDOhQ9Q7a3nZgC">
+                      <input type="hidden" name="amount" value="190">
+                      <input type="hidden" name="currency" value="USD">
+                      <input type="hidden" name="product" value="Onlinepay Wallet Brown Leather">
+                      <input type="hidden" name="extra_return_param" value="Demo shop">
+
+                  </form>
+                  <a class="btn btn-info btn-lg active" href="#" role="button" style="float:right;margin-right:5px;">Buy</a>
+
+              </div>
+
+          </article>
+</div>

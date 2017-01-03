@@ -1,0 +1,24 @@
+<table id="wechat_table">
+  <tbody><tr>
+      <td class="set-wechat-title">姓</td>
+      <td>
+        <%= f.text_field :last_name, class: 'ttd', placeholder: '', required: true %>
+      </td>
+  </tr>
+  <tr>
+      <td class="set-wechat-title">名</td>
+      <td><%= f.text_field :first_name, class: 'ttd', placeholder: '', required: true %></td>
+  </tr>
+  <tr>
+      <td class="set-wechat-title">地址</td>
+      <td><%= f.text_field :address, class: 'ttd', placeholder: '', required: true %></td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2">
+      <%= f.submit '确定', class: 'set-wechat-button btn btn-crud', style: 'margin-left: 120px;' %>
+    </td>
+  </tr>
+  </tbody>
+  </table>

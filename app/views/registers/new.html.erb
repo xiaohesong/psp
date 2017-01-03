@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://b.yzcdn.cn/v2/css/bootstrap_140705.css" onerror="_cdnFallback(this)" media="screen">
+<link rel="stylesheet" href="https://b.yzcdn.cn/v2/vendor/swiper/3.3.1/css/swiper.min.css" onerror="_cdnFallback(this)" media="screen">
+<link rel="stylesheet" href="https://b.yzcdn.cn/v2/build_css/stylesheets/www/projects/login_999d874d4d.css" onerror="_cdnFallback(this)" media="screen">
+
+<div class="container">
+  <div class="content" role="main">
+    <div class="app">
+      <div class="app-init-container">
+        <div>
+          <div class="container">
+            <div class="header">
+              <!-- <div class="header-side"><a href="#" target="_blank" class="js-route-transfer">免费注册，轻松开店</a></div> -->
+              <!-- <a href="#" class="js-route"> -->
+              <!-- </a> -->
+              <div class="header-title" style="display:inline-block;">注册</div>
+              </div>
+            <div class="main main-login clearfix">
+              <%= form_tag register_path, method: 'POST', class: "form-horizontal" do %>
+                <fieldset>
+                  <div class="control-group">
+                    <label class="control-label">帐号：</label>
+                    <div class="controls">
+                      <%= email_field_tag :email, nil, title: 'Please input your emial', tabindex: "1", required: true %>
+                      <p class="help-block error-message"></p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">登录密码：</label>
+                    <div class="controls">
+                      <%= password_field_tag :password, nil, title: 'Please enter your password', tabindex: "2", required: true %>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <label class="control-label">确认密码：</label>
+                    <div class="controls">
+                      <%= password_field_tag :password_confirmation, nil, title: 'Please confirmation your password', tabindex: "2", required: true %>
+                    </div>
+                  </div>
+
+                  <div class="control-group">
+                    <div class="controls">
+                      <button tabindex="5" class="btn btn-large btn-primary login-btn" data-loading-text="">确认</button>
+                    </div>
+                  </div>
+
+                  <div class="control-group error">
+                    <label class="control-label"></label>
+                    <div class="controls">
+                      <p class="help-block error-message"> <%= notice %> </p>
+                    </div>
+                  </div>
+                </fieldset>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notify-bar js-notify animated hinge hide"></div>
+    </div>
+  </div>
+</div>

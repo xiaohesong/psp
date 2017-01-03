@@ -1,0 +1,25 @@
+
+<!-- ▼ Main container -->
+<div id="app-container" class="container" myApp="STORE_WECHAT_NEW">
+
+    <div id="app-third-sidebar" class="js-app-third-sidebar">
+        <nav class="ui-nav">
+            <ul>
+                <li id="js-nav-list-0">
+                    <a href="/"><span>Home</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div id="app-help-button" class="js-app-help-button">
+            <i class="app-help-icon app-help-icon-help"></i>
+        </div>
+    </div>
+    <div class="app">
+    <div class="app-inner clearfix">
+      <%= form_for @user, url: user_path do |f| %>
+        <%= render 'form', f: f %>
+      <% end %>
+    </div>
+</div>
+
+</div>

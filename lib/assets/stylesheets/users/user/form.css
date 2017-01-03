@@ -1,0 +1,158 @@
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .btn-crud{
+  width: 80px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #2d3e50;
+  border: #2d3e50;
+  margin-left: 25px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] #btn{
+  color: #fff;
+  background-color: #444444;
+  border-color: #444444;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .app .app-inner form{
+    padding-top: 30px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] #wechat_table tbody tr{
+    line-height: 50px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] td.set-wechat-title {
+    width: 120px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .ttd {
+    width: 220px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border-color: #ddd;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] input, button {
+    background: none;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] table select {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border-color: #ddd;
+    margin-left: 2px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] td.set-wechat-title.qrcode {
+    vertical-align: top;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] td.set-wechat-title {
+    width: 120px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .img-uploader-container {
+    float: left;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .img-uploader {
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .img-uploader .img-holder {
+    width: 150px;
+    margin-bottom: 10px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .img-uploader .img-holder>img {
+    width: 150px;
+    height: 100px;
+}
+#app-container[myApp="STORE_WECHAT_INFOS_EDIT"] .img-uploader .img-holder .close-button {
+    display: none;
+    position: absolute;
+    width: 100px;
+    margin-top: -100px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .btn-crud{
+  width: 80px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #2d3e50;
+  border: #2d3e50;
+  margin-left: 25px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] #btn{
+  color: #fff;
+  background-color: #444444;
+  border-color: #444444;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .app .app-inner form{
+    padding-top: 30px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] #wechat_table tbody tr{
+    line-height: 50px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#app-container[myApp="STORE_WECHAT_NEW"] td.set-wechat-title {
+    width: 120px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .ttd {
+    width: 220px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border-color: #ddd;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] input, button {
+    background: none;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+#app-container[myApp="STORE_WECHAT_NEW"] table select {
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+    padding: 0 10px;
+    border-color: #ddd;
+    margin-left: 2px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] td.set-wechat-title.qrcode {
+    vertical-align: top;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] td.set-wechat-title {
+    width: 120px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .img-uploader-container {
+    float: left;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .img-uploader {
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .img-uploader .img-holder {
+    width: 150px;
+    margin-bottom: 10px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .img-uploader .img-holder>img {
+    width: 150px;
+    height: 100px;
+}
+#app-container[myApp="STORE_WECHAT_NEW"] .img-uploader .img-holder .close-button {
+    display: none;
+    position: absolute;
+    width: 100px;
+    margin-top: -100px;
+}
+
+  #app-container[myapp="STORE_WECHAT_INFOS_EDIT"] .ui-table{margin-top: 10px;}
+  #app-container[myapp="STORE_WECHAT_INFOS_EDIT"] .ui-table tr td{text-align: center;}
+  #app-container[myapp="STORE_WECHAT_INFOS_EDIT"] .ui-table tr th{text-align: center;}
+
+  #app-container[myapp="STORE_WECHAT_INFOS_EDIT"] .position{margin-left: 120px;}

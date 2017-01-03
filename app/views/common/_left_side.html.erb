@@ -1,0 +1,57 @@
+
+<!-- ▼ Main sidebar -->
+<aside id="app-sidebar" style="display:block;">
+  <div id="app-first-sidebar">
+    <div style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+      <a class="team-logo-wrap" href="#">
+          <div class="team-logo">
+            <%= image_tag "logo.jpg", class: "show-bg" %>
+
+          </div>
+      </a>
+      <nav>
+        <ul class="clearfix">
+          <li id="show_dashboard">
+            <a href="/">
+              <i class="sidebar-icon sidebar-icon-dashboard"></i>
+              <span class="left-side-font">概况</span>
+            </a>
+          </li>
+          <li id="show_room">
+            <a href="/products">
+              <i class="sidebar-icon sidebar-icon-room"></i>
+              <span class="left-side-font">产品</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!--登录退出按钮-->
+  <div id="app-user-info">
+    <span class="user-name" title= "<%= current_user.full_name %> "> <a href="javascript:;" style="color:#fff" ><%= current_user.full_name %> </a></span>
+    <span class="user-arrow"></span>
+    <div class="user-dropdown">
+      <div class="user-dropdown-meta">
+        <div> <%= current_user.full_name %> </div>
+      </div>
+      <div class="user-dropdown-select">
+        <a class="new-select" href="#">个人邀请奖励</a>
+        <a href="javascript:;">帐号设置</a>
+        <a href="javascript:;">切换店铺</a>
+        <%= link_to "退出", session_path, method: :delete %>
+        <!-- <a id="exit-log" href="javascript:void(0);" method="delete">退出</a> -->
+      </div>
+    </div>
+  </div>
+
+
+</aside>
+<!-- ▲ Main sidebar -->
+<script type="text/javascript">
+  $(document).on("click","#app-user-info .user-name",function(){
+    $("#app-user-info .user-dropdown").toggle();
+  })
+</script>
