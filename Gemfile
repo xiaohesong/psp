@@ -53,6 +53,13 @@ gem 'rails_admin', '~> 1.0'
 # gem "omniauth-wechat-oauth2", git: 'git@github.com:yangsr/omniauth-wechat-oauth2.git'
 # gem "omniauth-wechat-oauth2"
 
+gem 'redis', '~> 3.2'
+# Redis Namespace
+gem 'redis-namespace','~> 1.5.1'
+# 将一些数据存放入 Redis
+gem 'redis-objects', '1.1.0'
+gem 'redis-rails'
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

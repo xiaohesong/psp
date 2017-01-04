@@ -34,6 +34,16 @@ class User < ApplicationRecord
     "#{last_name}#{first_name}"
   end
 
+  def login!(browser_info)
+    Rails.logger.info browser_info * 10
+    self.update!(last_sign_in_at: Time.now)
+    $redis.set(browser_cache_key, browser_info)
+  end
+
+  def browser_cache_key
+    "user_browser_#{self.id}"
+  end
+
   private
   def encrypt_password
     self.salt = Digest::MD5.hexdigest("--#{Time.now.to_i}--")

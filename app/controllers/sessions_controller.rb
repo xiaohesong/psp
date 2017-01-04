@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
     @status = AuthenticateUserService.call(@user, params[:password])
     if @status.success?
       session[:user_id] = @user.id
-      @user.update!(last_sign_in_at: Time.now)
+      @user.login!(request.env['HTTP_USER_AGENT'])
       redirect_to root_path
     else
       redirect_to new_session_path, notice: @status.notice
