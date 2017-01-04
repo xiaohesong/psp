@@ -6,7 +6,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: { message: "已经存在!" }
   before_create :encrypt_password
 
-  EXPIRED_TIME = 15.minutes.ago
+  EXPIRED_TIME = 5.minutes.ago
 
   scope :admin?, ->(status) { where(admin: status) }
   scope :onlines, -> { where("last_sign_in_at > ?", EXPIRED_TIME) }
