@@ -7,7 +7,7 @@ MAINTAINER Xiaozhu didmehh@163.com
 RUN apt-get update && apt-get install -y build-essential libpq-dev nodejs
 
 # Set an environment variable where the Rails app is installed to inside of Docker image:
-ENV RAILS_ROOT /home/${whoami}/www/psp
+ENV RAILS_ROOT /home/issue/www/psp
 RUN mkdir -p $RAILS_ROOT
 
 # Set working directory, where the commands will be ran:

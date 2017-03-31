@@ -4,7 +4,7 @@ services:
     build: .
     command: bundle exec puma -C config/puma.rb
     volumes:
-      - /home/pinee/www/psp
+      - /home/issue/www/psp
     expose:
       - "3000"
   web:
