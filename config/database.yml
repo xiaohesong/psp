@@ -1,12 +1,38 @@
+# default: &default
+#   adapter: postgresql
+#   encoding: utf8
+#   pool: 50
+#   timeout: 5000
+#   host: localhost
+
+# development:
+#   <<: *default
+#   database: onlinepay_psp
+#   username: postgres
+#   password: oss
+
+
 default: &default
   adapter: postgresql
-  encoding: utf8
-  pool: 50
+  encoding: unicode
+  pool: 5
   timeout: 5000
-  host: localhost
+  username: postgres
+  # please see the update below about using hostnames to
+  # access linked services via docker-compose
+  host: postgres
+  port: 5432
+  password: #<%= ENV['POSTGRES_PASSWORD'] %>
+
 
 development:
   <<: *default
-  database: onlinepay_psp
-  username: postgres
-  password: oss
+  database: psp_dev
+
+test:
+  <<: *default
+  database: psp_test
+
+production:
+  <<: *default
+  database: psp_pro

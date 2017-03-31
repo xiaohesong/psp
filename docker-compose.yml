@@ -4,9 +4,11 @@ services:
     build: .
     command: bundle exec puma -C config/puma.rb
     volumes:
-      - /home/issue/www/psp
+      - .:/home/issue/www/psp
     expose:
       - "3000"
+    links:
+      - postgres
   web:
     build:
       context: .
@@ -15,3 +17,7 @@ services:
       - app
     ports:
       - "80:80"
+  postgres:
+    image: postgres:9.4
+    ports:
+      - "5432"
