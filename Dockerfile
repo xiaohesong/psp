@@ -26,6 +26,7 @@ COPY . .
 
 EXPOSE 3000
 
+RUN RAILS_ENV=development bundle exec rake assets:precompile
 # The default command that gets ran will be to start the Puma server.
 # CMD bundle exec puma -C config/puma.rb
 
