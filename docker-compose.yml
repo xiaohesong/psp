@@ -10,6 +10,8 @@ services:
     links:
       - postgres
       - redis
+    env_file:
+      - .secret.env
   web:
     build:
       context: .

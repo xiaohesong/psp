@@ -3,6 +3,9 @@ FROM ruby:2.3.1
 
 MAINTAINER Xiaozhu didmehh@163.com
 
+ENV RAILS_ENV production
+ENV RACK_ENV production
+
 # Install dependencies
 RUN apt-get update && apt-get install -y build-essential libpq-dev nodejs
 
@@ -26,7 +29,7 @@ COPY . .
 
 EXPOSE 3000
 
-RUN RAILS_ENV=development bundle exec rake assets:precompile
+RUN bundle exec rake assets:precompile
 # The default command that gets ran will be to start the Puma server.
 # CMD bundle exec puma -C config/puma.rb
 
