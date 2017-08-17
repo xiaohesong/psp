@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bundle exec rake assets:precompile
+RAILS_ENV=production bundle exec rake assets:precompile
 
 if [ ! -z $1 ]; then
   echo '数据库不存在'1
