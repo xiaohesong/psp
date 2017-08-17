@@ -8,7 +8,7 @@ if [ ! -z $1 ]; then
   docker-compose run app rake db:create
 fi
 
-# RAILS_ENV=production bundle exec rake db:migrate
-  docker-compose run app rake db:migrate
+RAILS_ENV=production bundle exec rake db:migrate
+  # docker-compose run app rake db:migrate
 
 bundle exec puma -C config/puma.rb
